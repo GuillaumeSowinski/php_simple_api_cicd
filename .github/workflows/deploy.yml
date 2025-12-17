@@ -21,7 +21,7 @@ jobs:
       - name : Copy files to server
         uses: appleboy/scp-action@v0.1.0
         with:
-          host: ${{ secrets.SECRET_HOST }}
+          host: ${{ secrets.SERVER_IP }}
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           source: "./*"
